@@ -1,0 +1,170 @@
+{
+    "name": "L6 Max - Tilt EQ + Volume",
+    "description": "EF44 profile for Zoom LiveTrak L6 Max control. Encoders 1-4: Tilt EQ (Ch1-4). Faders 1-4: Volume (Ch1-4). MIDI Ch1, CCs: Vol=1/7/13/19, LowEQ=2/8/14/20, HighEQ=3/9/15/21.",
+    "type": "EF44",
+    "isGridProfile": true,
+    "version": {
+        "major": "1",
+        "minor": "2",
+        "patch": "28"
+    },
+    "configs": [
+        {
+            "controlElementNumber": 0,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@cb]] self:eva(64)--[[@l]] local n=self:ind()--[[@glc]] glc(n,1,0,200,255)--[[@glp]] glp(n,1,64) ?>"
+                },
+                {
+                    "event": "2",
+                    "config": "<?lua --[[@l]] local n,v=self:ind(),self:eva()--[[@gms]] gms(0,176,2,v) gms(0,176,3,127-v)--[[@glp]] glp(n,1,v) ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 1,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@cb]] self:eva(64)--[[@l]] local n=self:ind()--[[@glc]] glc(n,1,0,200,255)--[[@glp]] glp(n,1,64) ?>"
+                },
+                {
+                    "event": "2",
+                    "config": "<?lua --[[@l]] local n,v=self:ind(),self:eva()--[[@gms]] gms(0,176,8,v) gms(0,176,9,127-v)--[[@glp]] glp(n,1,v) ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 2,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@cb]] self:eva(64)--[[@l]] local n=self:ind()--[[@glc]] glc(n,1,0,200,255)--[[@glp]] glp(n,1,64) ?>"
+                },
+                {
+                    "event": "2",
+                    "config": "<?lua --[[@l]] local n,v=self:ind(),self:eva()--[[@gms]] gms(0,176,14,v) gms(0,176,15,127-v)--[[@glp]] glp(n,1,v) ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 3,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@cb]] self:eva(64)--[[@l]] local n=self:ind()--[[@glc]] glc(n,1,0,200,255)--[[@glp]] glp(n,1,64) ?>"
+                },
+                {
+                    "event": "2",
+                    "config": "<?lua --[[@l]] local n,v=self:ind(),self:eva()--[[@gms]] gms(0,176,20,v) gms(0,176,21,127-v)--[[@glp]] glp(n,1,v) ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 4,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@l]] local n,v=self:ind(),self:pva()--[[@glc]] glc(n,1,255,180,0)--[[@glp]] glp(n,1,v) ?>"
+                },
+                {
+                    "event": "1",
+                    "config": "<?lua --[[@l]] local n,v=self:ind(),self:pva()--[[@gms]] gms(0,176,1,v)--[[@glp]] glp(n,1,v) ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 5,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@l]] local n,v=self:ind(),self:pva()--[[@glc]] glc(n,1,255,180,0)--[[@glp]] glp(n,1,v) ?>"
+                },
+                {
+                    "event": "1",
+                    "config": "<?lua --[[@l]] local n,v=self:ind(),self:pva()--[[@gms]] gms(0,176,7,v)--[[@glp]] glp(n,1,v) ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 6,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@l]] local n,v=self:ind(),self:pva()--[[@glc]] glc(n,1,255,180,0)--[[@glp]] glp(n,1,v) ?>"
+                },
+                {
+                    "event": "1",
+                    "config": "<?lua --[[@l]] local n,v=self:ind(),self:pva()--[[@gms]] gms(0,176,13,v)--[[@glp]] glp(n,1,v) ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 7,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@l]] local n,v=self:ind(),self:pva()--[[@glc]] glc(n,1,255,180,0)--[[@glp]] glp(n,1,v) ?>"
+                },
+                {
+                    "event": "1",
+                    "config": "<?lua --[[@l]] local n,v=self:ind(),self:pva()--[[@gms]] gms(0,176,19,v)--[[@glp]] glp(n,1,v) ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        },
+        {
+            "controlElementNumber": 255,
+            "events": [
+                {
+                    "event": "0",
+                    "config": "<?lua --[[@c]] --[[EF44: L6 Max Tilt EQ + Volume]]--[[@c]] --[[Encoders 0-3: Tilt EQ Ch1-4]]--[[@c]] --[[Faders 4-7: Volume Ch1-4]] ?>"
+                },
+                {
+                    "event": "4",
+                    "config": "<?lua --[[@cb]] gpl(gpn()) ?>"
+                },
+                {
+                    "event": "5",
+                    "config": "<?lua --[[@l]] local ch,cmd,p1,p2=midi.ch,midi.cmd,midi.p1,midi.p2 ?>"
+                },
+                {
+                    "event": "6",
+                    "config": "<?lua --[[@cb]] print('tick') ?>"
+                }
+            ]
+        }
+    ]
+}
